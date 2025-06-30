@@ -19,7 +19,8 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Leo Pham</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I’m a curious software developer who loves exploring new tech and trying out ideas. I enjoy doing all kinds of projects — from full-stack websites and practical data science pipelines to fun mini-games. Whether it’s building smooth frontends with React and Next.js or crunching data with Python, I’m always excited to learn, build, and see what’s possible next.
+              I’m a software developer growing into an AI Engineer who loves building smart, practical systems that make life easier.
+              Always exploring new ideas and open to meaningful projects that combine AI, data, and good design.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
