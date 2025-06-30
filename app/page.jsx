@@ -16,7 +16,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Minh Pham</span>
+              Hello I'm <br /> <span className="text-accent">Leo Pham</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I’m a curious software developer who loves exploring new tech and trying out ideas. I enjoy doing all kinds of projects — from full-stack websites and practical data science pipelines to fun mini-games. Whether it’s building smooth frontends with React and Next.js or crunching data with Python, I’m always excited to learn, build, and see what’s possible next.

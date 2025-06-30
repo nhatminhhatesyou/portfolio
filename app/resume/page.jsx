@@ -16,11 +16,11 @@ import {
 //about data
 const about = {
     title: "About me",
-    description: "Hi, I’m Minh Pham — currently a student pursuing a Master’s in Artificial Intelligence. I’m Vietnamese, currently based in Australia, and open to freelance opportunities. I enjoy learning new technologies and turning ideas into impactful digital products. Fluent in English and Vietnamese.",
+    description: "Hi, I’m Leo Pham — currently a student pursuing a Master’s in Artificial Intelligence. I’m Vietnamese, currently based in Australia, and open to freelance opportunities. I enjoy learning new technologies and turning ideas into impactful digital products. Fluent in English and Vietnamese.",
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Minh Pham",
+            fieldValue: "Leo Pham",
         },
         {
             fieldName: "Phone",
