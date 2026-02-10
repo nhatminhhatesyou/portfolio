@@ -133,23 +133,75 @@ const Work = () => {
         >
             <div className="container mx-auto">
                 {/* PJ type (dropdown) */}
-                <div className="mb-6 flex items-center gap-3">
+
+                <div className="mb-6 flex items-center gap-4">
                     <div className="text-white/70">Project Type:</div>
 
-                    <select
-                        value={selectedType}
-                        onChange={(e) => setSelectedType(e.target.value)}
-                        className="bg-white/5 text-white border border-white/10 rounded-xl px-3 py-2 outline-none"
-                    >
-                        {types.map((t) => (
-                            <option key={t} value={t} className="text-black">
-                                {t}
-                            </option>
-                        ))}
-                    </select>
+                    <Select.Root value={selectedType} onValueChange={setSelectedType}>
+                        <Select.Trigger
+                            className="
+                                        inline-flex items-center justify-between gap-3
+                                        rounded-xl px-4 py-2 min-w-[180px]
+                                        bg-white/5 backdrop-blur
+                                        border border-white/10
+                                        text-white
+                                        hover:border-white/30
+                                        transition
+                                        outline-none
+                                    "
+                            aria-label="Project Type"
+                        >
+                            <Select.Value />
+                            <Select.Icon>
+                                <ChevronDown className="w-4 h-4 text-white/60" />
+                            </Select.Icon>
+                        </Select.Trigger>
+
+                        <Select.Portal>
+                            <Select.Content
+                                position="popper"
+                                sideOffset={8}
+                                className="
+          z-50 w-[200px]
+          rounded-xl border border-white/10
+          bg-[#0b0b0b]/95 backdrop-blur
+          shadow-2xl
+        "
+                            >
+                                <Select.Viewport className="p-2 space-y-1">
+                                    {types.map((t) => (
+                                        <Select.Item
+                                            key={t}
+                                            value={t}
+                                            className="
+                relative flex items-center
+                rounded-lg px-3 py-2
+                text-white/80
+                cursor-pointer select-none
+                outline-none
+                hover:bg-white/10
+                data-[state=checked]:bg-white/10
+                data-[state=checked]:text-white
+                gap-2
+              "
+                                        >
+                                            <Select.ItemIndicator className="">
+                                                <Check className="w-4 h-4 text-accent" />
+                                            </Select.ItemIndicator>
+
+                                            <Select.ItemText className="pl-6">
+                                                {t}
+                                            </Select.ItemText>
+                                        </Select.Item>
+                                    ))}
+                                </Select.Viewport>
+                            </Select.Content>
+                        </Select.Portal>
+                    </Select.Root>
 
                     <div className="text-white/50 text-sm">
-                        {filteredProjects.length} project{filteredProjects.length !== 1 ? "s" : ""}
+                        {filteredProjects.length} project
+                        {filteredProjects.length !== 1 && "s"}
                     </div>
                 </div>
 
@@ -237,7 +289,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-        </motion.section>
+        </motion.section >
     )
 }
 
