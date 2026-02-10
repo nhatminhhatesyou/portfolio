@@ -26,10 +26,10 @@ const about = {
             fieldName: "Phone",
             fieldValue: "(+61)450 362 292",
         },
-        {
-            fieldName: "Experience",
-            fieldValue: "4+ Years",
-        },
+        // {
+        //     fieldName: "Experience",
+        //     fieldValue: "4+ Years",
+        // },
         {
             fieldName: "Facebook",
             fieldValue: "Nhat Minh",
